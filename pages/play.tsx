@@ -178,7 +178,7 @@ const Game: NextPage = () => {
           property="og:description"
           content="Let's test the abilities of your eyes. How good at distinguishing colors!"
         />
-        <meta property="og:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+        <meta property="og:image" content="https://golden-eyes-game.vercel.app/preview.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://golden-eyes-game.vercel.app" />
@@ -187,7 +187,7 @@ const Game: NextPage = () => {
           property="twitter:description"
           content="Let's test the abilities of your eyes. How good at distinguishing colors!"
         />
-        <meta property="twitter:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+        <meta property="twitter:image" content="https://golden-eyes-game.vercel.app/preview.png" />
       </Head>
 
       <GameOverCard gameOver={gameOver} score={score} name={'Testing'} reset={reset} />
