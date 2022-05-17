@@ -20,6 +20,34 @@ const Howto: NextPage = () => {
 
   return (
     <div className="flex h-screen flex-col items-center justify-center bg-theme-dark-red font-kanit">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Golden Eyes Game</title>
+        <meta name="title" content="Golden Eyes Game" />
+        <meta
+          name="description"
+          content="Let's test the abilities of your eyes. How good at distinguishing colors!"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://golden-eyes-game.vercel.app" />
+        <meta property="og:title" content="Golden Eyes Game" />
+        <meta
+          property="og:description"
+          content="Let's test the abilities of your eyes. How good at distinguishing colors!"
+        />
+        <meta property="og:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://golden-eyes-game.vercel.app" />
+        <meta property="twitter:title" content="Golden Eyes Game" />
+        <meta
+          property="twitter:description"
+          content="Let's test the abilities of your eyes. How good at distinguishing colors!"
+        />
+        <meta property="twitter:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+      </Head>
+
       <main className="flex sm:w-full md:w-1/2 xl:w-1/3 flex-1 flex-col items-center justify-center text-center overflow-y-auto">
         <div className="sm:h-1/2 md:h-3/4 bg-theme-foreground p-8 rounded-lg drop-shadow-lg overflow-y-auto">
           <div className="flex items-center justify-center">

@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { animated, useTransition, useSpring } from 'react-spring';
@@ -48,11 +49,47 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex overflow-hidden h-screen flex-col items-center justify-center bg-theme-dark-red font-kanit">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Golden Eyes Game</title>
+        <meta name="title" content="Golden Eyes Game" />
+        <meta
+          name="description"
+          content="Let's test the abilities of your eyes. How good at distinguishing colors!"
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://golden-eyes-game.vercel.app" />
+        <meta property="og:title" content="Golden Eyes Game" />
+        <meta
+          property="og:description"
+          content="Let's test the abilities of your eyes. How good at distinguishing colors!"
+        />
+        <meta property="og:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://golden-eyes-game.vercel.app" />
+        <meta property="twitter:title" content="Golden Eyes Game" />
+        <meta
+          property="twitter:description"
+          content="Let's test the abilities of your eyes. How good at distinguishing colors!"
+        />
+        <meta property="twitter:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+      </Head>
+
       <main className="flex sm:w-full md:w-1/2 xl:w-1/3 flex-1 flex-col items-center justify-center text-center">
         <div className="h-min bg-theme-foreground p-8 rounded-lg drop-shadow-lg">
-          <animated.h1 style={fadeIn} className="text-4xl font-bold mb-20 border-neutral-800">
+          <animated.h1 style={fadeIn} className="text-4xl font-bold mb-10 border-neutral-800">
             Golden Eyes Game
           </animated.h1>
+
+          <div className="flex flex-wrap justify-center w-1/2 mx-auto mb-10">
+            <Image
+              src={require('../public/icon.svg')}
+              className="max-w-sm h-auto shadow-lg"
+              alt="Start playing game"
+            />
+          </div>
 
           <div className="flex flex-col gap-6">
             {transitions((style, button) =>
