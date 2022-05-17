@@ -65,7 +65,7 @@ const Home: NextPage = () => {
           property="og:description"
           content="Let's test the abilities of your eyes. How good at distinguishing colors!"
         />
-        <meta property="og:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+        <meta property="og:image" content="https://golden-eyes-game.vercel.app/preview.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://golden-eyes-game.vercel.app" />
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
           property="twitter:description"
           content="Let's test the abilities of your eyes. How good at distinguishing colors!"
         />
-        <meta property="twitter:image" content="https://golden-eyes-game.vercel.app/preview.jpeg" />
+        <meta property="twitter:image" content="https://golden-eyes-game.vercel.app/preview.png" />
       </Head>
 
       <main className="flex sm:w-full md:w-1/2 xl:w-1/3 flex-1 flex-col items-center justify-center text-center">
