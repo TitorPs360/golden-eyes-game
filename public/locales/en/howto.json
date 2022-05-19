@@ -1,0 +1,23 @@
+{
+  "howtoplay": "How to play",
+  "startgame": "Press 'Play game' button to start the game",
+  "basic": {
+    "title": "Basic rules of play",
+    "1": "Find the color in the table that is the same as the color in the upper left corner. (Find the color in the table that is the same as the color in the upper left corner. (There is only one that correct)",
+    "2": "Each table can be attempts up to 10 times. When depleted, the table will change.",
+    "3": "There is a time to play each round 60 seconds.",
+    "4": "When you answer correctly, you gain additional 10 seconds.",
+    "5": "Have fun playing the game."
+  },
+  "component": {
+    "title": "Components",
+    "1": "The color we need to find",
+    "2": "Remaining time",
+    "3": "Score",
+    "4": "Answer table",
+    "5": "Restart game",
+    "6": "The number that can be pressed again in that table.",
+    "7": "Skip to next table"
+  },
+  "gameover": "Start a new game by pressing the button 'Play Again'"
+}
