@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## About Golden Eyes Game
 
-## Getting Started
+_GoldenEyesGame_ - agame project made from NextJS with simple rules. Finding the color in the table that match the given color.
 
-First, run the development server:
+In this project, I created a game from NextJS and Tailwind. The rule is find the colors within the table that have many similar colors, but only one color matches the given color. I have deployed this game to vercel, you can try it [Here!](https://golden-eyes-game.vercel.app).
 
-```bash
-npm run dev
-# or
-yarn dev
+## Youtube
+
+For more information can be seen in my [video]("https://youtu.be/CPrN-oZEM08") on YouTube.
+
+[![new_thumb](./fig/cover.png)]("https://youtu.be/CPrN-oZEM08")
+
+## Requirements
+
+- NodeJS
+- Git
+
+## Install
+
+```
+git clone https://github.com/TitorPs360/golden-eyes-game
+cd golden-eyes-game
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Run game on localhost
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+  - ```
+    yarn dev
+    ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+  - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+- Build static game
 
-To learn more about Next.js, take a look at the following resources:
+  - ```
+    yarn build
+    yarn export
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Deploy on Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Deploy on Vercel
+  Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Basic rules of play
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Find the color in the table that is the same as the color in the upper left corner. (Find the color in the table that is the same as the color in the upper left corner. (There is only one that correct)
+2. Each table can be attempts up to 10 times. When depleted, the table will change.
+3. There is a time to play each round 60 seconds.
+4. When you answer correctly, you gain additional 10 seconds.
+5. Have fun playing the game.
+
+## Basic components in game
+
+[![game_components](./fig/components.png)]("https://youtu.be/CPrN-oZEM08")
+
+1. The color we need to find
+2. Remaining time
+3. Score
+4. Answer table
+5. Restart game
+6. The number that can be pressed again in that table
+7. Skip to next table
