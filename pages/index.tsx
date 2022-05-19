@@ -26,16 +26,28 @@ const Home: NextPage = () => {
   useEffect(() => {
     setButtons([
       {
-        href: '/play',
-        label: 'Play game',
+        href: '/peanut_eyes',
+        label: 'Peanut Eyes Mode',
         y: 0,
         delay: 150,
+      },
+      {
+        href: '/normal_eyes',
+        label: 'Normal Eyes Mode',
+        y: 0,
+        delay: 300,
+      },
+      {
+        href: '/golden_eyes',
+        label: 'Golden Eyes Mode',
+        y: 0,
+        delay: 450,
       },
       {
         href: '/howto',
         label: 'How to play',
         y: 0,
-        delay: 300,
+        delay: 600,
       },
     ]);
   }, []);
