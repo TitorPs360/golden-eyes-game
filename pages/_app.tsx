@@ -1,22 +1,22 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+import { getAnalytics, isSupported } from 'firebase/analytics';
 
 import { appWithTranslation } from 'next-i18next';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDkzArZu1DlPWvRGL3DGcX-cQXatpG4hAs',
-  authDomain: 'golden-eyes-game.firebaseapp.com',
-  projectId: 'golden-eyes-game',
-  storageBucket: 'golden-eyes-game.appspot.com',
-  messagingSenderId: '583929792801',
-  appId: '1:583929792801:web:b385f853f841c966815660',
-  measurementId: 'G-G4TW33XJQ4',
+  apiKey: process.env.NEXT_PUBLIC_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKE,
+  messagingSenderId: process.env.NEXT_PUBLIC_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
