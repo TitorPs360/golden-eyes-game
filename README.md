@@ -56,7 +56,7 @@ yarn
 
 ## Basic components in game
 
-[![game_components](./fig/components.png)]
+![game_components](./fig/components.png)
 
 1. The color we need to find
 2. Remaining time
