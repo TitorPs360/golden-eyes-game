@@ -6,7 +6,7 @@ In this project, I created a game from NextJS and Tailwind. The rule is find the
 
 ## Youtube
 
-For more information can be seen in my [video]("https://youtu.be/CPrN-oZEM08") on YouTube.
+For more information can be seen in my [video](https://youtu.be/CPrN-oZEM08) on YouTube.
 
 [![new_thumb](./fig/cover.png)]("https://youtu.be/CPrN-oZEM08")
 
@@ -56,7 +56,7 @@ yarn
 
 ## Basic components in game
 
-[![game_components](./fig/components.png)]("https://youtu.be/CPrN-oZEM08")
+[![game_components](./fig/components.png)]
 
 1. The color we need to find
 2. Remaining time
